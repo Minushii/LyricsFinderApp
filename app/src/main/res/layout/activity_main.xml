@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:padding="16dp"
+        android:id="@+id/scrollView"/>
+
+    <EditText
+        android:id="@+id/txtArtist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:hint="Enter the artist Name"
+        android:paddingLeft="15dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"/>
+
+    <EditText
+        android:id="@+id/txtSong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtArtist"
+        android:layout_marginTop="12dp"
+        android:hint="Enter the Song Name"
+        android:paddingLeft="15dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFind"
+        android:layout_below="@+id/txtSong"
+        android:layout_marginLeft="5dp"
+        android:paddingTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="16dp"
+        android:text="Find Lyrics"
+        android:padding="5dp"
+        />
+
+</RelativeLayout>
